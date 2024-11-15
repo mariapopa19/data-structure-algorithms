@@ -48,3 +48,5 @@ printAllNumbersThenAllPairSums([1,2,3,4,5]);
 // Rule 2: Remove Constants
 // Rule 3: Different terms for inputs 
 // Rule 4: Drop Non Dominants
+
+// Data Structures + Algorithms = Programs 
