@@ -7,7 +7,7 @@
 
 ## Big O
 
-![alt text](./resorces/big-o-complexity-chart.png)
+![alt text](./resources/big-o-complexity-chart.png)
 
 This is a good reference [site](https://www.bigocheatsheet.com/) for **Big O**
 
