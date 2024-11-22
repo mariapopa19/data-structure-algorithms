@@ -19,14 +19,14 @@ This is a good reference [site](https://www.bigocheatsheet.com/) for **Big O**
 4. **Communication Skills** - Does your personality match the companies’ culture?
 
 ### Data Structures 
-- Arrays
+- **Arrays**
 - Staks 
 - Queues
 - Linked Lists 
 - Trees 
 - Tries
 - Graphs 
-- Hash Tables
+- **Hash Tables**
 
 ### Algorithms 
 - Sorting
