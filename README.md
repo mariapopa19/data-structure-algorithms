@@ -68,3 +68,6 @@ Message's properties can be modified, or added but message cannot be redeclared 
 
 [**Spread Operator** [...value]](https://www.geeksforgeeks.org/how-to-use-spread-operator-in-typescript/)- is a powerful tool, that allows you to spread the elements of an array or objects into another array or objects. This operator makes it easy to copy arrays, combine arrays, or create shallow copies of iterable.
 
+## Visual Studio Code Notes
+
+**Ctrl + I** - to trigger a suggestion instead of **Ctrl + Space**
