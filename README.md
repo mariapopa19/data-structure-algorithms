@@ -71,3 +71,5 @@ Message's properties can be modified, or added but message cannot be redeclared 
 ## Visual Studio Code Notes
 
 **Ctrl + I** - to trigger a suggestion instead of **Ctrl + Space**
+
+**Ctrl + .** - to trigger a quick fix 

@@ -50,10 +50,68 @@ class LinkedList {
         this.length++;
         return this;
     }
+
+    printList() {
+        const array = [];
+        let currentNode: LinkedListNode | null = this.head;
+        while (currentNode !== null) {
+            array.push(currentNode.value);
+            currentNode = currentNode.next;
+        }
+        console.log(array);
+        return array;
+    }
+
+    insert(index: number, value: number) {
+        // check params
+        if(index >= this.length) {
+            return this.append(value);
+        }
+
+        const newNode: LinkedListNode | null = new LinkedListNode(value);
+
+        const leader: LinkedListNode | null = this.traverseToIndex(index-1);
+        const holdingPointer: LinkedListNode | null = leader !== null ? leader.next : null;
+        if (leader !== null) {
+            leader.next = newNode;
+        }
+        newNode.next = holdingPointer;
+        this.length ++;
+        return this.printList();
+    }
+
+    traverseToIndex(index: number): LinkedListNode | null {
+        //check params
+        let counter: number = 0;
+        let currentNode:LinkedListNode|null = this.head;
+        while (counter !== index && currentNode !== null) {
+            currentNode = currentNode.next;
+            counter++;
+        }
+        return currentNode;
+    }
+
+    remove(index: number) {
+        // check params 
+        if(index >= this.length || index < 0) {
+            return this.printList();
+        }
+
+        const leader: LinkedListNode | null = this.traverseToIndex(index-1);
+        const holdingPointer: LinkedListNode | null = leader !== null ? leader.next : null;
+        if (leader !== null && holdingPointer !== null) {
+            leader.next = holdingPointer.next;
+        }
+        this.length--;
+        return this.printList();
+    }
 }
 
 const myLinkedList = new LinkedList(10);
 myLinkedList.append(5);
 myLinkedList.append(16);
 myLinkedList.prepend(1);
-console.log(myLinkedList);
+myLinkedList.printList();
+myLinkedList.insert(2,99);
+myLinkedList.remove(1);
+// console.log(myLinkedList);
