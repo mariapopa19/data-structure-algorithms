@@ -43,3 +43,11 @@ let myLinkesList = {
     }
 } 
 ```
+
+**Doubly Linked List** - is a list that is linked both ways
+- have a refference to the next node and a previous node 
+- it is easy to go backwards 
+
+![doubly linked list](../resources/doubly-linked-lists.png)
+
+![linked list pros and cons](../resources/linked-list-pros-and-cons.png)
