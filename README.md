@@ -64,6 +64,79 @@ Message's properties can be modified, or added but message cannot be redeclared 
 
 ![Var vs Let vs Const](./resources//var-let-const.png)
 
+## How Javascript Works
+
+**Javascript** is a single threaded language that can be non-blocking
+
+Single threaded it's means that is have only one call stack. This is synchronous program.
+
+What is a program? 
+- allocate memory
+- parse and execute - read and write
+
+Tha Javascriot engine is read by browser engine (for Chrome is V8) and turn into machine executable instruction for the browser.
+
+Javascript engine:
+- Memory Heap - where memory allocation happends
+- Call Stack - where your code is read and executed, is telling you where you are in the program
+
+Memory Leak - happends when you have unused memory, this is why global variables are bad
+
+```javascript
+const one = () => {
+    const two = () => {
+        console.log('4');
+    }
+    two();
+}
+
+one() //Returns 4
+```
+
+```
+console.log('4') - first out
+two() - second
+one() - third
+// CALL STACK
+```
+
+Stack overflow
+```javascript
+// Recoursion - a function that calls itself
+function foo() {
+    foo()
+}
+
+foo()
+```
+Asyncrous is the solution, but is not part of the javascript, is part of the browser.
+```javascript
+console.log('1');
+setTimeout(() => {
+    console.log('2');
+}, 2000)
+console.log('3');
+
+// Returns: 1 3 2
+```
+![javascript-run-time-environment](./resources//javascript-run-time-environment.png)
+
+
+For a time out the console.log has to be in a: call stack, web api, callback queue, event loop.
+
+1. CALL STACK: has 
+console.log('1'); - it is execute
+```javascript
+setTimeout(() => {
+    console.log('2');
+}, 2000)
+```
+then it's passes to the web api
+2. WEB API: setTimeout(), 2000 -> waits for 2 sec
+3. CALLBACK QUEUE: callback() - for the console.log
+4. EVENT LOOP: checks if the call stack is empty, and if is empty checks if there are any callbacks, if there are the callbacks are moved to the CALL STACK to be executed -> console.log(2)
+
+
 ## Javascript/ Typescript Notes
 
 [**Spread Operator** [...value]](https://www.geeksforgeeks.org/how-to-use-spread-operator-in-typescript/)- is a powerful tool, that allows you to spread the elements of an array or objects into another array or objects. This operator makes it easy to copy arrays, combine arrays, or create shallow copies of iterable.
