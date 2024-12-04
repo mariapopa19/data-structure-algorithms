@@ -20,7 +20,8 @@ This is a good reference [site](https://www.bigocheatsheet.com/) for **Big O**
 
 ### Data Structures 
 - [x] **Arrays**
-- [ ] Staks <span style="color:#f2eb5c; font-style:italic"> [wip] </span>
+- [ ] Staks $${\color{yellow}[wip]}$$
+- [ ] <font color="red">This text is red!</font>
 - [ ] Queues <span style="color:#f2eb5c; font-style:italic"> [wip] </span>
 - [x] Linked Lists 
 - [ ] Trees 
