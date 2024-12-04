@@ -20,8 +20,8 @@ This is a good reference [site](https://www.bigocheatsheet.com/) for **Big O**
 
 ### Data Structures 
 - [x] **Arrays**
-- [ ] Staks $${\color{yellow}[wip]}$$
-- [ ] Queues $${\color{yellow}[wip]}$$
+- [ ] Staks $${\color{#f2eb5c}[wip]}$$
+- [ ] Queues $${\color{#f2eb5c}[wip]}$$
 - [x] Linked Lists 
 - [ ] Trees 
 - [ ] Tries
