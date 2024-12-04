@@ -21,8 +21,7 @@ This is a good reference [site](https://www.bigocheatsheet.com/) for **Big O**
 ### Data Structures 
 - [x] **Arrays**
 - [ ] Staks $${\color{yellow}[wip]}$$
-- [ ] <font color="red">This text is red!</font>
-- [ ] Queues <span style="color:#f2eb5c; font-style:italic"> [wip] </span>
+- [ ] Queues $${\color{yellow}[wip]}$$
 - [x] Linked Lists 
 - [ ] Trees 
 - [ ] Tries
