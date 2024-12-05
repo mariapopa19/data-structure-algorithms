@@ -1,6 +1,6 @@
 class CrazyQueue {
-    private first: string[];
-    private last: string[];
+    private readonly first: string[];
+    private readonly last: string[];
 
     constructor(value: string) {
         this.first = [];

@@ -1,6 +1,7 @@
 # data-structure-algorithms
 
 ## The 3 pillars of good code
+
 1. **Readable**
 2. **Time Complexity**
 3. **Space Complexity**
@@ -11,26 +12,28 @@
 
 This is a good reference [site](https://www.bigocheatsheet.com/) for **Big O**
 
-## Interview - How to solve problems 
+## Interview - How to solve problems
 
 1. **Analytic Skills** - How can you think through problems and analyze things?
 2. **Coding Skills** - Do you code well, by writing clean, simple, organized, readable code?
 3. **Tehnical Skills** - Do you know the fundamentals of the job you're applying for?
 4. **Communication Skills** - Does your personality match the companies’ culture?
 
-### Data Structures 
+### Data Structures
+
 - [x] **Arrays**
 - [ ] Staks $${\color{#f2eb5c}[wip]}$$
 - [ ] Queues $${\color{#f2eb5c}[wip]}$$
-- [x] Linked Lists 
-- [ ] Trees 
+- [x] Linked Lists
+- [ ] Trees
 - [ ] Tries
-- [ ] Graphs 
+- [ ] Graphs
 - [x] **Hash Tables**
 
-### Algorithms 
+### Algorithms
+
 - Sorting
-- Dynamic Programming 
+- Dynamic Programming
 - BFS + DFS (Searching)
 - Recursion
   
@@ -38,7 +41,7 @@ This is a good reference [site](https://www.bigocheatsheet.com/) for **Big O**
 
 When you are askend in an interview about strings, you should be thinking like is an array. For example: when you are asked to reverse a string, convert the string into an array (with split() in javascript), do the operations, and then convet back to string.
 
-Common Interview Question - How to manipulate a string 
+Common Interview Question - How to manipulate a string
 
 ## [Javascript/ Typescript basic: Var vs Let vs Const](https://dev.to/sethusenthil/var-vs-let-vs-const-1cgc)
 
@@ -46,7 +49,7 @@ Common Interview Question - How to manipulate a string
 
 **Hoisting** - it tries to bring any sort of declaration (including named functions)on the topmost scope as possible
 
-Since Vars use function scope, it brings it to the first line of the function. Keep in mind the Var is just being declared, not being assigned a value. That's why we are getting the string 'undefined' instead of 'error:var i is not defined'. 
+Since Vars use function scope, it brings it to the first line of the function. Keep in mind the Var is just being declared, not being assigned a value. That's why we are getting the string 'undefined' instead of 'error:var i is not defined'.
 
 **Let**- use block scope
 
@@ -70,13 +73,15 @@ Message's properties can be modified, or added but message cannot be redeclared 
 
 Single threaded it's means that is have only one call stack. This is synchronous program.
 
-What is a program? 
+What is a program?
+
 - allocate memory
 - parse and execute - read and write
 
 Tha Javascriot engine is read by browser engine (for Chrome is V8) and turn into machine executable instruction for the browser.
 
 Javascript engine:
+
 - Memory Heap - where memory allocation happends
 - Call Stack - where your code is read and executed, is telling you where you are in the program
 
@@ -93,7 +98,7 @@ const one = () => {
 one() //Returns 4
 ```
 
-```
+```text
 console.log('4') - first out
 two() - second
 one() - third
@@ -101,6 +106,7 @@ one() - third
 ```
 
 Stack overflow
+
 ```javascript
 // Recoursion - a function that calls itself
 function foo() {
@@ -109,7 +115,9 @@ function foo() {
 
 foo()
 ```
+
 Asyncrous is the solution, but is not part of the javascript, is part of the browser.
+
 ```javascript
 console.log('1');
 setTimeout(() => {
@@ -119,23 +127,24 @@ console.log('3');
 
 // Returns: 1 3 2
 ```
-![javascript-run-time-environment](./resources//javascript-run-time-environment.png)
 
+![javascript-run-time-environment](./resources//javascript-run-time-environment.png)
 
 For a time out the console.log has to be in a: call stack, web api, callback queue, event loop.
 
-1. CALL STACK: has 
-console.log('1'); - it is execute
+1. CALL STACK: has
 ```javascript
+console.log('1'); - it is execute
+
 setTimeout(() => {
     console.log('2');
 }, 2000)
 ```
+
 then it's passes to the web api
 2. WEB API: setTimeout(), 2000 -> waits for 2 sec
 3. CALLBACK QUEUE: callback() - for the console.log
 4. EVENT LOOP: checks if the call stack is empty, and if is empty checks if there are any callbacks, if there are the callbacks are moved to the CALL STACK to be executed -> console.log(2)
-
 
 ## Javascript/ Typescript Notes
 
@@ -145,4 +154,4 @@ then it's passes to the web api
 
 **Ctrl + I** - to trigger a suggestion instead of **Ctrl + Space**
 
-**Ctrl + .** - to trigger a quick fix 
+**Ctrl + .** - to trigger a quick fix
