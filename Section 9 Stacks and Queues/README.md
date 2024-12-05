@@ -22,3 +22,5 @@ Queues are good for:
 - restaurant app, for reserving a table 
 - uber when you want to get a ride, the first person how requested a ride gets priority, then you are the second 
 - printer, when multiple persons want to print somethig on that printer, the person that hints print first should have first print out
+
+![stacks and queues](../resources/stacks-and-queues.png)
