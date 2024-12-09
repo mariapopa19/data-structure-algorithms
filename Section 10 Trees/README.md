@@ -30,3 +30,37 @@ function BinaryTreeNode(value) {
 ```
 
 ![binary tree](../resources/binary-tree.png)
+
+
+The perfect binary tree:
+
+- has no nodes that only have one child
+- all the leaf are full
+- a node ether have no children or 2 children
+- on each level it is double the nodes
+
+The full binary tree:
+
+- a node have one or 2 children but no zero
+
+![binary search tree complexity](../resources//binary-search-tree-complexity.png)
+
+Binary Search Tree:
+- lookup - O(log n)
+- insert - O(log n)
+- delete - O(log n)
+
+```text
+Level 0: 2^0 = 1;
+Level 1: 2^1 = 2;
+Level 2: 2^2 = 4;
+Level 3: 2^3 = 8;
+
+# of nodes = 2^h - 1
+log nodes = steps
+```
+
+```text
+log 100 = 2
+10^2 = 100
+```
