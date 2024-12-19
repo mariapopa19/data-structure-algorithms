@@ -64,3 +64,22 @@ log nodes = steps
 log 100 = 2
 10^2 = 100
 ```
+
+
+![unbalanced search tree](../resources/unbalanced-search-tree.png)
+
+The unbalanced tree it can transform in a linked list and have O(n) complexity.
+
+> In an interview it would not asked you to balance a tree because is time-consuming.
+
+
+ $${\color{green}Pros}$$ for **Binary Search Trees**:
+
+- Better than O(n)
+- Ordered
+- Flexible Size 
+- they perform well if they are balanced
+
+ $${\color{red}Cons}$$ for **Binary Search Trees**:
+
+- No O(1) operations
