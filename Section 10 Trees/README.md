@@ -77,9 +77,38 @@ The unbalanced tree it can transform in a linked list and have O(n) complexity.
 
 - Better than O(n)
 - Ordered
-- Flexible Size 
+- Flexible Size
 - they perform well if they are balanced
 
  $${\color{red}Cons}$$ for **Binary Search Trees**:
 
 - No O(1) operations
+
+![binary heap](../resources/binary-heap.png)
+
+This is a MAX heap - the root node is the max value.
+
+In a heap every node in a higher level have a bigger value than nodes in the lower levels.
+
+A heap can be used in any algorithm when sorting is important.
+
+They are great at doing comperative operations.
+
+![alt text](../resources/priority-queue.png)
+
+$${\color{green}Pros}$$ for **Binary Heaps**:
+
+- Better than O(n)
+- Priority
+- Flexible Size
+- Fast Insert
+
+ $${\color{red}Cons}$$ for **Binary Heaps**:
+
+- Slow lookup
+
+![trie](../resources/trie.png)
+
+A trie is alows you to know of a word or a part of a word is in a text.
+
+It is like an autocompleation.

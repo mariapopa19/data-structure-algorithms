@@ -25,8 +25,8 @@ This is a good reference [site](https://www.bigocheatsheet.com/) for **Big O**
 - [x] Staks 
 - [x] Queues 
 - [x] Linked Lists
-- [ ] Trees $${\color{#f2eb5c}[wip]}$$
-- [ ] Graphs
+- [x] Trees 
+- [ ] Graphs $${\color{#f2eb5c}[wip]}$$
 - [x] **Hash Tables**
 
 ### Algorithms
