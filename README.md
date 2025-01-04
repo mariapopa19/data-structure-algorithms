@@ -1,5 +1,6 @@
 # data-structure-algorithms
 
+
 ## The 3 pillars of good code
 
 1. **Readable**
@@ -26,21 +27,23 @@ This is a good reference [site](https://www.bigocheatsheet.com/) for **Big O**
 - [x] Queues 
 - [x] Linked Lists
 - [x] Trees 
-- [ ] Graphs $${\color{#f2eb5c}[wip]}$$
+- [x] Graphs 
 - [x] **Hash Tables**
 
 ### Algorithms
 
-- Sorting
-- Dynamic Programming
-- BFS + DFS (Searching)
-- Recursion
+- [ ] Sorting
+- [ ] Dynamic Programming
+- [ ] BFS + DFS (Searching)
+- [ ] Recursion $${\color{#f2eb5c}[wip]}$$
   
 ## Quick Notes
 
 When you are askend in an interview about strings, you should be thinking like is an array. For example: when you are asked to reverse a string, convert the string into an array (with split() in javascript), do the operations, and then convet back to string.
 
 Common Interview Question - How to manipulate a string
+
+[Course map](https://coggle.it/diagram/W5E5tqYlrXvFJPsq/t/master-the-interview-click-here-for-course-link)
 
 ## [Javascript/ Typescript basic: Var vs Let vs Const](https://dev.to/sethusenthil/var-vs-let-vs-const-1cgc)
 
