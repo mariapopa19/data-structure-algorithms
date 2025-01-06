@@ -1,6 +1,5 @@
 # data-structure-algorithms
 
-
 ## The 3 pillars of good code
 
 1. **Readable**
@@ -23,11 +22,11 @@ This is a good reference [site](https://www.bigocheatsheet.com/) for **Big O**
 ### Data Structures
 
 - [x] **Arrays**
-- [x] Staks 
-- [x] Queues 
+- [x] Staks
+- [x] Queues
 - [x] Linked Lists
-- [x] Trees 
-- [x] Graphs 
+- [x] Trees
+- [x] Graphs
 - [x] **Hash Tables**
 
 ### Algorithms
@@ -135,15 +134,16 @@ console.log('3');
 For a time out the console.log has to be in a: call stack, web api, callback queue, event loop.
 
 1. CALL STACK: has
-```javascript
-console.log('1'); - it is execute
 
-setTimeout(() => {
-    console.log('2');
-}, 2000)
-```
+    ```javascript
+    console.log('1'); - it is execute
 
-then it's passes to the web api
+    setTimeout(() => {
+        console.log('2');
+    }, 2000)
+    ```
+
+    then it's passes to the web api
 2. WEB API: setTimeout(), 2000 -> waits for 2 sec
 3. CALLBACK QUEUE: callback() - for the console.log
 4. EVENT LOOP: checks if the call stack is empty, and if is empty checks if there are any callbacks, if there are the callbacks are moved to the CALL STACK to be executed -> console.log(2)
