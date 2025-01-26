@@ -31,10 +31,10 @@ This is a good reference [site](https://www.bigocheatsheet.com/) for **Big O**
 
 ### Algorithms
 
-- [ ] Sorting
+- [x] Sorting
 - [ ] Dynamic Programming
-- [ ] BFS + DFS (Searching)
-- [ ] Recursion $${\color{#f2eb5c}[wip]}$$
+- [ ] BFS + DFS (Searching) $${\color{#f2eb5c}[wip]}$$
+- [x] Recursion 
   
 ## Quick Notes
 
