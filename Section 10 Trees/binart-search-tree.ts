@@ -182,6 +182,57 @@ class BinarySearchTree {
          
         return this.breadthFirstSearchRecursive(queue, list);
     }
+    depthFirstSearchInorder() {
+        return traverseInOrder(this.root, []);
+    }
+    depthFirstSearchPostorder() {
+        return traversePostOrder(this.root, []);
+    }
+    depthFirstSearchPreorder() {
+        return traversePreOrder(this.root, []);
+    }
+}
+
+function traverseInOrder(node: TreeNode|null, list: number[]) {
+    if (node === null) {
+        return list;
+    }
+    if(node.left) {
+        traverseInOrder(node.left, list);
+    }
+    list.push(node.value);
+    if(node.right) {
+        traverseInOrder(node.right, list);
+    }
+    return list;
+}
+
+function traversePreOrder(node: TreeNode|null, list: number[]) {
+    if (node === null) {
+        return list;
+    }
+    list.push(node.value);
+    if(node.left) {
+        traversePreOrder(node.left, list);
+    }
+    if(node.right) {
+        traversePreOrder(node.right, list);
+    }
+    return list;
+}
+
+function traversePostOrder(node: TreeNode|null, list: number[]) {
+    if (node === null) {
+        return list;
+    }
+    if(node.left) {
+        traversePostOrder(node.left, list);
+    }
+    if(node.right) {
+        traversePostOrder(node.right, list);
+    }
+    list.push(node.value);
+    return list;
 }
 
 const tree = new BinarySearchTree();
@@ -193,8 +244,12 @@ tree.insert(170);
 tree.insert(15);
 tree.insert(1);
 tree.remove(170);
-// tree.breadthFirstSearch()
+tree.breadthFirstSearch()
 tree.breadthFirstSearchRecursive([tree.root], [])
+tree.depthFirstSearchInorder()
+tree.depthFirstSearchPreorder()
+console.log(tree.depthFirstSearchPostorder());
+
 
 console.log(JSON.stringify(traverse(tree.root)));
 

@@ -52,3 +52,19 @@ DFS cons:
 - can get slow - if is realy realy deep
 
 `BFS and DFS are implemented as methods in binary search tree`
+
+```mermaid
+graph TD;
+101---33
+101---105
+```
+
+DFS can be implemented in 3 types:
+
+- inorder - 33, 101, 105
+- preorder - 101, 33, 105 - can recreate a tree
+- postorder - 33, 105, 101
+
+Dijksta algorith is te best for finding the shortest path.
+
+Bellman-Ford is also good for shortest path but can have negative weights.
