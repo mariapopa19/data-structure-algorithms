@@ -253,7 +253,7 @@ console.log(tree.depthFirstSearchPostorder());
 
 console.log(JSON.stringify(traverse(tree.root)));
 
-// console.log(tree.lookup(170));
+console.log(tree.lookup(170));
 
 //      9
 //  4      20
